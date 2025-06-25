@@ -99,21 +99,30 @@ scene.add(particles)
 
 
 /**
- * Lights
+ * Point Lights
  */
 
-const light1 = new THREE.PointLight('#ffffff', 3)
-const light2 = new THREE.PointLight('#ffffff', 3)
-const light3 = new THREE.PointLight('#ffffff', 3)
-scene.add(light1, light2, light3)
+// const light1 = new THREE.PointLight('#ffffff', 3)
+// const light2 = new THREE.PointLight('#ffffff', 3)
+// const light3 = new THREE.PointLight('#ffffff', 3)
+// scene.add(light1, light2, light3)
 
-light1.position.y = mesh1.position.y 
-light2.position.y = mesh2.position.y - 0.5
-light3.position.y = mesh3.position.y + 2
+// light1.position.y = mesh1.position.y 
+// light2.position.y = mesh2.position.y - 0.5
+// light3.position.y = mesh3.position.y + 2
 
-light1.position.x = mesh1.position.x - 1.5
-light2.position.x = mesh2.position.x - 1.5
-light3.position.x = mesh3.position.x - 1.5
+// light1.position.x = mesh1.position.x - 1.5
+// light2.position.x = mesh2.position.x - 1.5
+// light3.position.x = mesh3.position.x - 1.5
+
+/**
+ * Directional Light
+ */
+
+const light1 = new THREE.DirectionalLight()
+scene.add(light1)
+
+light1.position.set(4, 1, -1)
 
 const lightFolder = gui.addFolder('Light')
 const lightPosition = lightFolder.addFolder('Position')
