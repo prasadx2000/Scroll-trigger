@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background: #1e1a20;
+  color: white
+}
+
+/* body, html{
+  overflow: hidden;
+} */
+
+.canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: -100;
+}
+
+section{
+  /* border: 2px solid red; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 7em;
+  font-family: 'Bitter';
+  z-index: 1000;
+}
+
+.second-section{
+  justify-content: right;
+}
